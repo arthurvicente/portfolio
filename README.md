@@ -1,31 +1,66 @@
-# Portfolio
+## Foundry
 
+**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-## Index
+Foundry consists of:
 
-- Introduction
-- JavaScript_Codes
-- React.js
-- Solidity_And_Smart_Contracts
-- About_The_Author
+-   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
+-   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
+-   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
+-   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
-## Introduction
+## Documentation
 
-<p align="justify">
+https://book.getfoundry.sh/
 
-</p>
+## Usage
 
-## JavaScript_codes
+### Build
 
-- Arrays
+```shell
+$ forge build
+```
 
-## React.js
+### Test
 
-## Solidity_And_Smart_Contracts
+```shell
+$ forge test
+```
 
-## About_The_Autor
+### Format
 
-To install, follow the instructions below:
+```shell
+$ forge fmt
+```
 
-```bash
-Instruction here...
+### Gas Snapshots
+
+```shell
+$ forge snapshot
+```
+
+### Anvil
+
+```shell
+$ anvil
+```
+
+### Deploy
+
+```shell
+$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+```
+
+### Cast
+
+```shell
+$ cast <subcommand>
+```
+
+### Help
+
+```shell
+$ forge --help
+$ anvil --help
+$ cast --help
+```
