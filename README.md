@@ -1,6 +1,5 @@
 # Portfolio
 
-!Badge de Status
 
 ## Index
 
