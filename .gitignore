@@ -15,3 +15,7 @@ docs/
 
 .DS_store
 zkout/
+broadcast/
+lib/
+.gitignore
+foundry.toml
